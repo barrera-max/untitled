@@ -1,13 +1,10 @@
+import Boundary.PantallaAdm;
 import Control.GestorActualizaciones;
 import Entidades.*;
 
 import java.util.ArrayList;
 
-public class PantallaAdm {
-
-    private ArrayList<Bodega> bodegas;
-    private Bodega bodegaSeleccionada;
-    private ArrayList<Vino> vinos;
+public class App {
 
     public static void main(String[] args) {
 
@@ -23,35 +20,12 @@ public class PantallaAdm {
         System.out.println(vino.toString() );
 
         GestorActualizaciones control = new GestorActualizaciones();
+        PantallaAdm pantallaAdm = new PantallaAdm();
+
 
         Vino nuevo = control.crearVino();
 
         System.out.println("\n\nEn esta parte el control crea un nuevo vino");
         System.out.println(nuevo.toString());
     }
-
-    public void opcionImportarActDeVinoDeBodega(){
-
-    }
-    public static void habilitarPantalla(){
-
-    }
-    public static void solicitarSeleccionBodegas(){
-
-    }
-
-    public static void tomarSeleccionBodega(){
-
-    }
-
-    public static void mostrarActDeVinosActualizadosYcreados(){
-
-    }
-
-    public static void mostrarOpcionFinalizar(){
-
-    }
-
-    public static void opcionFinalizar(){}
-
 }
